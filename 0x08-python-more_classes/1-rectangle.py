@@ -4,7 +4,8 @@
 
 
 class Rectangle:
-    """A class that defines a rectangle"""
+    """A rectangle class (based on 0-rectangle.py)
+    """
 
     def __init__(self, width, height):
         """A constructor for the rectangle class (based on 0-rectangle.py)
@@ -15,18 +16,17 @@ class Rectangle:
         """
         self.__width = width
         self.__height = height
-        
+
     @property
     def width(self):
         """The width of the rectangle"""
         return self.__width
-    
-    
+
     @property
     def height(self):
         """The height of the rectangle"""
         return self.__height
-    
+
     @width.setter
     def width(self, value):
         """Setter for the width of the rectangle"""
@@ -36,7 +36,7 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         else:
             self.__width = value
-            
+
     @height.setter
     def height(self, value):
         """Setter for the height of the rectangle"""
@@ -46,4 +46,3 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         else:
             self.__height = value
-            
