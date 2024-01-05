@@ -168,4 +168,4 @@ class Rectangle:
         Returns:
             Rectangle: A new Rectangle instance representing a square.
         """
-        return cls(width=size, height=size)
+        return cls(size, size)
