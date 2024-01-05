@@ -123,3 +123,4 @@ class Rectangle:
         Print a farewell message when an instance is deleted.
         """
         print("Bye rectangle...")
+        
