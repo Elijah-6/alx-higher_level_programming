@@ -107,11 +107,13 @@ class Rectangle:
         """
         if (self.__width == 0) or (self.__height == 0):
             return ""
-        rectangle_str = ""
-        for _ in range(self.height):
-            rectangle_str += str(type(self).print_symbol) * self.width + '\n'
 
-        return rectangle_str.rstrip()
+        rect = []
+        for i in range(self.__height):
+            [rect.append(str(self.print_symbol)) for j in range(self.__width)]
+            if i != self.__height - 1:
+                rect.append("\n")
+        return ("".join(rect))
 
     def __repr__(self):
         """
