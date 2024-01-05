@@ -130,11 +130,11 @@ class Rectangle:
         """
         type(self).number_of_instances -= 1
         print("Bye rectangle...")
-        
+
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """
-        Compare the areas of two rectangles and return the one with the larger area.
+        Compare the areas of two rectangles.
 
         Args:
             rect_1 (Rectangle): The first rectangle.
