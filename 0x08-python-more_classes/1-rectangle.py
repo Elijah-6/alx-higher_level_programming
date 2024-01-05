@@ -5,7 +5,7 @@
 
 class Rectangle:
     """A rectangle class (based on 0-rectangle.py)
-        
+
     Attributes:
         width (int): the width of the rectangle
         height (int): the height of the rectangle
@@ -33,7 +33,7 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """Set the width of the rectangle
-        
+
         Args:
             value (int): the new width of the rectangle
         """
@@ -47,7 +47,7 @@ class Rectangle:
     @property
     def height(self):
         """Get the height of the rectangle.
-        
+
         Returns:
             int: the height of the rectangle
         """
@@ -56,7 +56,7 @@ class Rectangle:
     @height.setter
     def height(self, value):
         """Setter for the height of the rectangle
-        
+
         Args:
             value (int): the new height of the rectangle
         """
