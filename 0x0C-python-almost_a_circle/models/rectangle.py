@@ -1,6 +1,6 @@
 #!usr/bin/python3
 """Rectangle class"""
-from models.base import Base
+from .base import Base
 
 class Rectangle(Base):
     """
@@ -48,6 +48,10 @@ class Rectangle(Base):
             Parameters:
                 value (int): The new width value.
         """
+            if not isinstance(value, int):
+                raise TypeError("width must be an integer")
+            if value <= 0:
+                raise ValueError("width must be > 0")
             self.__width = value
         
         @property
@@ -63,6 +67,10 @@ class Rectangle(Base):
             Parameters:
                 value (int): The new height value.
             """
+            if not isinstance(value, int):
+                raise TypeError("width must be an integer")
+            if value <= 0:
+                raise ValueError("width must be > 0")
             self.__height = value
             
         @property
@@ -78,6 +86,10 @@ class Rectangle(Base):
             Parameters:
             value (int): The new x-coordinate value.
             """
+            if not isinstance(value,int):
+                raise TypeError("width must be an integer")
+            if value <= 0:
+                raise ValueError("width must be > 0")
             self.__x = value
 
         @property
@@ -92,5 +104,9 @@ class Rectangle(Base):
 
             Parameters:
             value (int): The new y-coordinate value.
-        """
+            """
+            if not isinstance(value, int):
+                raise TypeError("width must be an integer")
+            if value <= 0:
+                raise ValueError("width must be > 0")
             self.__y = value
