@@ -1,2 +1,1 @@
-# JavaScript Web Scrping.
-
+# JavaScript Web Scrping
