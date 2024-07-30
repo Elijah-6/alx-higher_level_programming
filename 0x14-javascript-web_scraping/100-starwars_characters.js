@@ -2,8 +2,8 @@
 
 const req = require('request');
 const id = process.argv[2];
-const url = 'https://swapi-api.alx-tools.com/api/';
-req.get(url + id, function (error, res, body) {
+const url = `https://swapi-api.alx-tools.com/api/${id}`;
+req.get(url, function (error, res, body) {
   if (error) {
     console.log(error);
   }
